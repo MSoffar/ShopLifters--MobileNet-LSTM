@@ -1,24 +1,37 @@
 ShopLifters Detection Project
 
+A computer vision project aimed at detecting shoplifting behaviors from video data. This repository contains code for processing video frames and metadata, with plans to integrate a behavior classification model.
+
+Table of Contents
+
+	1.	Overview
+	2.	Features
+	3.	Dataset
+	4.	Installation
+	5.	Usage
+	6.	How It Works
+	7.	Future Work
+	8.	Contributing
+
 Overview
 
-#This project focuses on analyzing video footage to identify shoplifting behavior. The dataset consists of several videos of both shoplifters and non-shoplifters. The objective is to process the videos frame by frame and develop a system that can classify and detect potential shoplifting incidents.
+The ShopLifters Detection Project is designed to analyze surveillance video footage to identify potential shoplifting incidents. Using frame-by-frame analysis and video metadata, the project aims to build an automated shoplifting detection system leveraging machine learning.
 
 Features
 
-	•	Frame-by-frame video analysis: Extracts frames from videos for detailed analysis.
-	•	Video metadata handling: Includes data such as the number of frames, resolution, and file name.
-	•	Shoplifting behavior detection: Aims to automate the identification of shoplifting through machine learning (currently in progress).
+	•	Video Processing: Frame-by-frame extraction from videos for data analysis.
+	•	Metadata Collection: Extracts video properties such as resolution, frame count, and video duration.
+	•	Behavior Classification: A planned feature to detect shoplifting behavior using machine learning models.
 
-Dataset Information
+Dataset
 
-The dataset contains videos with the following attributes:
+The project uses a dataset consisting of multiple .mp4 video files, with varying frame counts and resolutions. Here are the key attributes of the videos:
 
 	•	Resolution: 704x576 pixels.
-	•	Frame count: Ranges between 175 and 475 frames per video.
-	•	File format: Videos are in .mp4 format.
+	•	Frame Count: Ranges from 175 to 475 frames per video.
+	•	File Format: Videos are stored in .mp4.
 
-Sample video metadata:
+Sample metadata from the dataset:
 
 {
   "file": "shop_lifter_n_0.mp4",
@@ -27,34 +40,46 @@ Sample video metadata:
   "height": 576
 }
 
-Installation and Usage
+Installation
+
+To get started with the project, follow these steps:
 
 	1.	Clone the repository:
 
-git clone <repo-link>
+git clone www.github.com/MSoffar/ShopLifters--MobileNet-LSTM
+
+	2.	Navigate to the project directory:
+
+cd ShopLifters--MobileNet-LSTM
 
 
-	2.	Install the required dependencies:
+	3.	Install the required dependencies
 
-pip install -r requirements.txt
+Usage
 
-
-	3.	Run the main script for analysis:
+Once the dependencies are installed, you can run the video analysis script:
 
 python main.py
 
-
+This script will process the videos, extract metadata, and prepare the data for further analysis or model training.
 
 How It Works
 
-	•	Frame Extraction: The videos are processed frame by frame.
-	•	Metadata Extraction: Collects and stores essential metadata like resolution and frame count.
-	•	Behavior Classification: A machine learning model will be implemented to detect shoplifting based on video data.
+	•	Frame Extraction: The videos are processed to extract individual frames for analysis.
+	•	Metadata Handling: Information such as frame count, resolution, and video duration are extracted from each video.
+	•	Machine Learning: (Work in progress) A model will be trained to identify shoplifting behaviors based on frame data and other features.
 
 Future Work
 
-	•	Build and integrate a machine learning model for shoplifting detection.
-	•	Optimize frame processing performance.
-	•	Expand dataset size to enhance model accuracy.
+	•	Computer Vision Model: Develop and integrate a model for automatic shoplifting detection.
+	•	Performance Optimization: Improve the efficiency of video processing, particularly for larger datasets.
+	•	Dataset Expansion: Use a larger and more diverse dataset to improve the model’s accuracy.
 
-Feel free to make any changes or let me know if there’s anything else you’d like to add!
+Contributing
+
+Contributions are welcome! If you’d like to contribute to the project, please follow these steps:
+
+	1.	Fork the repository.
+	2.	Create a new branch for your feature or bugfix.
+	3.	Commit your changes and push to your branch.
+	4.	Submit a pull request with a detailed explanation of your changes.
