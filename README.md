@@ -1,6 +1,6 @@
-##ShopLifters Detection Project
+ShopLifters Detection Project
 
-#Overview
+Overview
 
 #This project focuses on analyzing video footage to identify shoplifting behavior. The dataset consists of several videos of both shoplifters and non-shoplifters. The objective is to process the videos frame by frame and develop a system that can classify and detect potential shoplifting incidents.
 
