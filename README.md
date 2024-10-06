@@ -1,6 +1,6 @@
-ShopLifters Detection Project
+# ShopLifters Detection Project
 
-A computer vision project aimed at detecting shoplifting behaviors from video data. This repository contains code for processing video frames and metadata, with plans to integrate a behavior classification model.
+## A computer vision project aimed at detecting shoplifting behaviors from video data. This repository contains code for processing video frames and metadata, with plans to integrate a behavior classification model.
 
 Table of Contents
 
